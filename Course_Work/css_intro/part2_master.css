@@ -1,0 +1,16 @@
+body{
+  background: url(https://llandscapes-ee1.kxcdn.com/wp-content/uploads/2016/09/9020441717_b9baa37c55_z.jpg);
+}
+p{
+  color: black
+}
+
+div{
+  background-color: white;
+  border-color: black;
+  border-width: 5px;
+  border-style:groove;
+}
+span{
+  background-color: gray;
+}

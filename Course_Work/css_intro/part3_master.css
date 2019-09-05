@@ -1,0 +1,23 @@
+.first{
+  color: blue;
+}
+.second{
+  color: red;
+}
+#p1{
+  color: green;
+  text-decoration: underline;
+}
+ul{
+  border: 4px dotted #ff00ff;
+}
+li{
+  color: #20b220;
+}
+li a{
+  color: gold;
+}
+li a[href="https://www.reddit.com"]{
+  color: orange;
+  border: 5px thin red;
+}
