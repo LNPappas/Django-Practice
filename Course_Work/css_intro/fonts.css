@@ -1,0 +1,15 @@
+h1{
+  text-align: center;
+  font-family: "Arial";
+}
+p{
+  font-family: 'Manjari', sans-serif;
+  font-style: italic;
+}
+body{
+  font-size: 20px;
+}
+#two{
+  font-family: fantasy;
+  font-size: 2.0em
+}

@@ -1,0 +1,35 @@
+body{
+  background: #1c2438;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 50px;
+  color: white;
+  border-left: 50px solid #13b1d1;
+  border-right: 50px solid #13b1d1;
+  border-bottom: 50px solid #13b1d1;
+
+}
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+#p{
+  padding: 10px;
+  text-align:center;
+}
+form{
+  text-align: center;
+}
+label{
+  display: block;
+  align-content: center;
+}
+#submit{
+  background: #f0be0c;
+  padding: 20px;
+  font-family: cursive;
+  border-radius: 12px;
+
+}
