@@ -1,0 +1,29 @@
+td{
+  width:  150px;
+  height: 150px;
+  text-align: center;
+  border: 5px solid #0091ff;
+  font-size: 100px;
+}
+.jumbotron{
+  background-color: #313438;
+
+  color: white;
+}
+#b{
+  background-color: #47494d;
+  color: #47e7ff;
+  border-color: #0091ff
+}
+h1{
+  color: #0091ff;
+}
+p{
+  color: #de5050;
+}
+body{
+  background-color: #282e30;
+}
+td{
+  color:#de5050
+}

@@ -7,11 +7,14 @@ letter = pet[pet.length - 1]
 
 if (first[0] === last[0]) {
   if (age > 20 || age < 30) {
-    if (height >== 170) {
+    if (height >= 170) {
       if (letter === 'y') {
         console.log("SPY!!!");
       }
     }
   }
 
+}
+else {
+  console.log("Nothing to see here.");
 }
