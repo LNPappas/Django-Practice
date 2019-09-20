@@ -5,4 +5,6 @@ from django.http import HttpResponse
 def index(request):
     my_dic = {'insert_me': "Hello from views.py!"}
     return render(request, 'first_app/index.html', context=my_dic)
-    
+
+def kitty(request):
+    return render(request, 'first_app/kitty.html')

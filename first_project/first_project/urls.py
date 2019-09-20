@@ -23,5 +23,6 @@ from first_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^first_app/', include('first_app.urls')),
+    path('kitty/', views.kitty),
     path('', views.index),
 ]
