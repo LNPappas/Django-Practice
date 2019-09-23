@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+    <head>
+        <meta charset="utf-8">
+        <title>User</title>
+        <link rel="stylesheet" href="{% static "css/userIndex.css"%}">
+    </head>
+    <body>
+        <h2>Current Users:</h2>
+        <div>
+            {% if user %}
+                <table>
+                    <thead>
+                            <th> Last Name </th>
+                            <th> First Name </th>
+                            <th> Email </th>
+                    </thead>
+                    
+                    {% for person in user %}
+
+                    <tr>
+                        <td> {{ person.last }} </td>
+                        <td> {{ person.first }} </td>                     
+                        <td> {{ person.email }} </td>
+                    </tr>
+
+                    {% endfor %}
+                </table>
+            {% else %}
+                <p> NO USERS FOUND </p>
+            {% endif %}
+
+        </div>
+        
+    </body>

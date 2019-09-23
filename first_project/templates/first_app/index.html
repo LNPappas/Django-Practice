@@ -1,12 +1,36 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
     <head>
         <meta charset="utf-8">
         <title>First App</title>
+        <link rel="stylesheet" href="{% static "css/indexstyle.css"%}">
     </head>
     <body>
         <h1>Hello! This is index.html</h1>
-        {{ insert_me }}
-        
+        <h2>Here are the Access Records:</h2>
+
+        <div class="djangtwo">
+            {% if access_records %}
+            <table>
+                <thead>
+                    <th> Site Name </th>
+                    <th> Date Accessed </th>
+                </thead>
+
+
+                {% for acc in access_records %}
+
+                <tr>
+                    <td> {{ acc.name }} </td>
+                    <td> {{ acc.date }} </td>
+                </tr>
+
+                {% endfor %}
+            </table>
+            {% else %}
+            <p> NO ACCESS RECORDS FOUND </p>
+            {% endif %}
+        </div>
     </body>
 </html>
