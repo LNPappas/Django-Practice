@@ -15,4 +15,13 @@ def kitty(request):
 
 def form_name_view(request):
     form = FormName()
+
+    if request.method == 'POST':
+        form = FormName(request.POST)
+        if form.is_valid():
+            print("NAME: "+form.cleaned_data['name'])
+            print("EMAIL: "+form.cleaned_data['email'])
+            print("TEXT: "+form.cleaned_data['text'])
+
+
     return render(request, 'first_app/form_name.html', {'form':form})
