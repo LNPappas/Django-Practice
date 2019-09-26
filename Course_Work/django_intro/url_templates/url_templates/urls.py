@@ -21,7 +21,5 @@ urlpatterns = [
     path('appOne/', include('appOne.urls')), 
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
-    path('relative/', views.relative, name='relative',)
-
 ]
 

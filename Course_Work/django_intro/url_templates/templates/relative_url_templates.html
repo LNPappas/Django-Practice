@@ -11,8 +11,11 @@
         crossorigin="anonymous">
     </head>
     <body>
-        <h1 align="center">Welcome to Url's with Templates</h1>
-        <a href="{% url 'appOne:other' %}">Other</a>
-        
+        <h1 align="center">Welcome to Url's with Templates</h1><br><br>
+        <div align='center' name='container'>
+            <a align="center" href="{% url 'appOne:other' %}">Other</a><br>
+            <a align="center" href="{% url 'admin:index' %}">Admin</a><br>
+            <a align="center" href="{% url 'index' %}">Index</a><br>
+        </div>
     </body>
 </html>
