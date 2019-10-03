@@ -70,3 +70,12 @@ name = "Sammy"
 # Use print formatting to print the following string:
 "Hello my dog's name is Sammy and he is 4 years old"
 print(f"Hello my dog's name is {name} and he is {age} years old.")
+
+s = 'aba'
+n = 10
+a = {}
+for index, letter in enumerate(s):
+    if letter == 'a':
+        a.update({index:letter})
+print(n%len(s))
+
