@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classroom</title>
+  </head>
+  <body>
+    <h1>Teacher List</h1>
+    <ul>
+      {% for teacher in teacher_list %}
+      {% comment %} {% for teacher in object_list %} {% endcomment %}
+      <li><a href="/classroom/teacherdetail/{{teacher.id}}">{{teacher.first_name}}</a></li>
+      <ul>
+        <li><a href="/classroom/teacherupdate/{{teacher.id}}">Update</a></li>
+        <li><a href="/classroom/teacherdelete/{{teacher.id}}">Delete</a></li>
+      </ul></br>
+      {% endfor%}
+    </ul></br>
+    <a href="{% url 'classroom:home' %}">Home</a></br>
+    <a href="{% url 'classroom:teacher' %}">Add a Teacher</a></br>
+  </body>
+</html>

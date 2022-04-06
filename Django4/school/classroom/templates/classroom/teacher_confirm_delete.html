@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classroom</title>
+  </head>
+  <body>
+    <h1>Delete Teacher</h1>
+    <form method="POST">
+      {% csrf_token %} {{teacher.first_name}} {{teacher.last_name}}</br></br>
+      <input type="submit" , value="Delete" />
+    </form></br></br>
+    <a href="{% url 'classroom:home' %}">Home</a></br>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.review {
+  border: 5px dashed rgb(238, 76, 76);
+}
+
+.email {
+  border: 5px dotted rgb(0, 255, 128);
+}
+
+.first {
+  border: 5px dashed rgb(212, 9, 212);
+}
+
+.last {
+  border: 5px solid cyan;
+}

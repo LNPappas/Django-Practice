@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classroom</title>
+  </head>
+  <body>
+    <h1>Teacher Details</h1>
+    <ul>
+      <li>First Name: {{teacher.first_name}}</li></br>
+      <li>Last Name: {{teacher.last_name}}</li></br>
+      <li>Subject: {{teacher.subject}}</li></br>
+    </ul></br>
+    <a href="{% url 'classroom:home' %}">Home</a></br>
+    <a href="{% url 'classroom:teacher' %}">Add a Teacher</a></br>
+    <a href="{% url 'classroom:teacherlist' %}">List Teacher</a></br>
+  </body>
+</html>
