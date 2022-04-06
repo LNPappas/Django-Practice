@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Variable HTML</h1>
+    {% if user_logged_in %}
+    <h2>Her name is: {{first_name}} {{last_name | upper}}</h2>
+    {% else %}
+    <h2>Her name is: {{first_name}}</h2>
+    {% endif %}
+
+    <h2>List:</h2>
+    <h2>
+      <ol>
+        {% for item in some_list %}
+        <li><h3>{{item}}</h3></li>
+        {% endfor %}
+      </ol>
+    </h2>
+    <h2>Dictionary:</h2>
+    <h2>
+      <ul>
+        {% for key, value in some_dict.items %}
+        <li><h4>{{key}} : {{value}}</h4></li>
+        {% endfor %}
+      </ul>
+    </h2>
+    <h1><a href="{% url 'my_app:example' %}">EXAMPLE</a></h1>
+  </body>
+</html>

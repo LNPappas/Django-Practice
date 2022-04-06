@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<h1>Example HTML</h1>
+
+<h1>
+  <img src="{% static 'my_app/me.png' %}" alt="my image" /> <br />
+  <a href="{% url 'my_app:variable' %}">VARIABLE</a>
+</h1>
+{% endblock %}
